@@ -89,14 +89,7 @@ namespace AllProfessions
                             //Console.WriteLine("Adding profession number: " + element.ToString("g"));
 
                             //adding in health bonuses that are a special case of LevelUpMenu.getImmediateProfessionPerk
-                            if (element == 24)
-                            {
-                                Game1.player.maxHealth += 15;
-                            }
-                            if (element == 27)
-                            {
-                                Game1.player.maxHealth += 25;
-                            }
+                            LevelUpMenu.getImmediateProfessionPerk(element);
                         }
                     }
                 }
